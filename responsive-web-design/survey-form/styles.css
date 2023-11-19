@@ -1,0 +1,86 @@
+/* Elements */
+
+html {
+  font-family: system-ui, sans-serif;
+  background: #09090b;
+  color: #a1a1aa;
+}
+
+h1 {
+  color: #fafafa;
+}
+
+form {
+  accent-color: #818cf8;
+}
+
+input,
+select,
+textarea {
+  display: block;
+  margin-top: 0.25rem;
+  background: #27272a;
+  color: #fafafa;
+  border: unset;
+}
+
+select,
+textarea,
+input[type=text],
+input[type=email],
+input[type=number] {
+  line-height: 1.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+}
+
+textarea {
+  font-family: inherit;
+}
+
+button {
+  width: 100%;
+  margin-top: 2rem;
+  line-height: 1.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background: #fafafa;
+  color: #09090b;
+}
+
+/* Classes */
+
+.form-sheet {
+  background: #18181b;
+  padding: 2rem 1rem;
+  margin: 1rem auto;
+  border-radius: 1.5rem;
+  max-width: 45rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  display: block;
+  font-weight: 500;
+  color: #fafafa;
+  margin-block: unset;
+}
+
+.form-radio,
+.form-checkbox {
+  line-height: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+}

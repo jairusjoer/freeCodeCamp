@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="form-sheet">
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form">
+      <div class="form-group">
+        <div class="form-row">
+          <label class="form-label" for="name" id="name-label">Name*</label>
+          <input type="text" name="name" id="name" placeholder="Your name" required>
+        </div>
+
+        <div class="form-row">
+          <label class="form-label" for="email" id="email-label">Email*</label>
+          <input type="email" name="email" id="email" placeholder="Your email" required>
+        </div>
+
+        <div class="form-row">
+          <label class="form-label" for="number" id="number-label">Age</label>
+          <input type="number" name="number" id="number" placeholder="Your age" min="1" max="128">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-row">
+          <label class="form-label" for="dropdown" id="dropdown-label">Current role</label>
+          <select name="dropdown" id="dropdown">
+            <option value="student">Student</option>
+            <option value="full-time-job">Full Time Job</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-row">
+          <p class="form-label">Choose your professions</p>
+          <label class="form-checkbox">
+            <input type="checkbox" name="profession" value="front-end" checked>
+            Front-end
+          </label>
+          <label class="form-checkbox">
+            <input type="checkbox" name="profession" value="back-end">
+            Back-end
+          </label>
+          <label class="form-checkbox">
+            <input type="checkbox" name="profession" value="full-stack">
+            Full stack
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-row">
+          <p class="form-label">Would you recommend freeCodeCamp?</p>
+          <label class="form-radio">
+            <input type="radio" name="recommend" value="definetly" checked>
+            Definetly
+          </label>
+          <label class="form-radio">
+            <input type="radio" name="recommend" value="maybe">
+            Maybe
+          </label>
+          <label class="form-radio">
+            <input type="radio" name="recommend" value="not sure">
+            Not sure
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-row">
+          <p class="form-label">Details about you</p>
+          <textarea name="message" id="message" rows="5" placeholder="Your message"></textarea>
+        </div>
+      </div>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+
+</html>
