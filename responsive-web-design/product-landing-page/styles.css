@@ -1,0 +1,61 @@
+/* Reset */
+
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+  outline: revert
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Elements */
+
+html {
+  font-family: system-ui, sans-serif;
+  background: #09090b;
+  color: #fafafa;
+}
+
+main {
+  margin-inline: 1.5rem;
+}
+
+header {
+  padding-block: 0.5rem;
+  position: sticky;
+  top: 0;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+nav {
+  margin-left: auto;
+  display: flex;
+  gap: 0.25rem;
+}
+
+/* IDs */
+
+#header-img {
+  height: 2rem;
+}
+
+#about {
+  border-radius: 1rem;
+  background: #18181b;
+  padding: 1.5rem;
+}
+
+/* Classes */
+
+.nav-link {
+  line-height: 2rem;
+  padding-inline: 0.5rem;
+}
+
+@media (min-width: 45rem) {}
